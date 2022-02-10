@@ -110,7 +110,7 @@ body {
   margin: 10px 0 40px;
 }
 
-button {
+.generate-btn {
   width: 230px;
   /* height: 45px; */
   padding: 10px 15px;
@@ -127,7 +127,7 @@ button {
   cursor: pointer;
 }
 
-button > img {
+.generate-btn > img {
   height: 20px;
 }
 
@@ -141,13 +141,34 @@ button > img {
   /* border: 1px solid yellow; */
 }
 
-.password {
-  width: 40%;
-  height: 40px;
-  color: #55f991;
-  text-align: center;
-  background: #273549;
+.result-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 30%;
+  padding: 12px 10px;
   border-radius: 5px;
-  margin: 20px 0;
-  padding: 8px 0;
+  background: #273549;
+}
+
+.password {
+  /* width: 40%;
+  height: 40px; */
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #55f991;
+  word-break: break-word;
+  margin-left: 20px;
+  /* border: 1px solid red; */
+}
+
+.clipboard-btn {
+  font-size: 20px;
+  background: #10b981;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

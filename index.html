@@ -11,6 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/bbb0dc831a.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Random Password Generator</title>
   </head>
   <body>
@@ -18,30 +22,24 @@
       <div class="top-container">
         <div class="settings-container">
           <div class="setting">
-            <label for="password-length">Password Length</label>
-            <input
-              type="number"
-              id="password-length"
-              min="4"
-              max="25"
-              value="10"
-            />
+            <label for="length">Password Length</label>
+            <input type="number" id="length" min="4" max="25" value="10" />
           </div>
           <div class="setting">
-            <label for="include-uppercase">Include uppercase letters</label>
-            <input type="checkbox" id="include-uppercase" checked />
+            <label for="lowercase">Include lowercase letters</label>
+            <input type="checkbox" id="lowercase" checked />
           </div>
           <div class="setting">
-            <label for="include-lowercase">Include lowercase letters</label>
-            <input type="checkbox" id="include-lowercase" checked />
+            <label for="uppercase">Include uppercase letters</label>
+            <input type="checkbox" id="uppercase" checked />
           </div>
           <div class="setting">
-            <label for="include-numbers">Include numbers</label>
-            <input type="checkbox" id="include-numbers" checked />
+            <label for="numbers">Include numbers</label>
+            <input type="checkbox" id="numbers" checked />
           </div>
           <div class="setting">
-            <label for="include-symbols">Include symbols</label>
-            <input type="checkbox" id="include-symbols" checked />
+            <label for="symbols">Include symbols</label>
+            <input type="checkbox" id="symbols" checked />
           </div>
         </div>
         <div class="info-container">
@@ -50,17 +48,27 @@
             <span>random password</span>
           </h1>
           <p>Never use an insecure password again.</p>
-          <button>
+          <button class="generate-btn" id="generate">
             <img src="./assets/Icon.svg" />
             <span>Generate passwords</span>
           </button>
         </div>
       </div>
       <div class="passwords-container">
-        <p class="password p1">fgsf</p>
-        <p class="password p2">dgsgsd</p>
-        <p class="password p3">gsfgsf</p>
-        <p class="password p4">gsfgsf</p>
+        <div class="result-container">
+          <span class="password" id="option1"></span>
+          <button class="clipboard-btn" id="clipboard">
+            <i class="fa-regular fa-clipboard"></i>
+          </button>
+        </div>
+        <div class="result-container">
+          <span class="password" id="option2"></span>
+          <button class="clipboard-btn" id="clipboard2">
+            <i class="fa-regular fa-clipboard"></i>
+          </button>
+        </div>
+        <!-- <p class="password p3">gsfgsf</p>
+        <p class="password p4">gsfgsf</p> -->
       </div>
     </div>
 
